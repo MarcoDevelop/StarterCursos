@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JS</title>
+</head>
+<body>
+    <Script>
+        // 2º exercício
+        // Crie uma função que dado um intervalo (entre x e y) exiba todos número pares:
+        // function pares(x, y) {
+        //   código aqui
+        // }
+        // pares(32, 321);
+
+        function pares(x, y) {
+            var p = 0;
+            while(x <= y){
+
+                if((x % 2) === 0){
+                    p++
+                }
+
+                console.log('Numeros de pares: ' + p);
+                
+                x++;
+            }
+        }
+
+        pares(32, 321);
+    </Script>
+</body>
+</html>

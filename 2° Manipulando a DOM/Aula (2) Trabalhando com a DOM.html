@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JS</title>
+</head>
+<body>
+
+    <div id="app">
+
+        <!-- <input onkeypress="digitado()" type="text" name="name" id="name" class="name" placeholder="Nome" /> -->
+
+        <input type="text" name="name" />
+ 
+        <button class="botao">Adicionar</button>
+
+    </div>
+
+    <Script>
+        
+        // Pega o elemento pelo ID
+        // var inputElement = document.getElementById('name');
+
+        // Pega a tag do elemento
+        // var inputElement = document.getElementsByTagName('input');
+
+        // Pega a teg input pela classe
+        // var inputElement = document.getElementsByClassName('name')[0];
+
+        // Pega o elemento input dentro da div com id app 
+        // var inputElement = document.querySelector('div#app input');
+        
+        // Pega o elemento com name=name
+        // var inputElement = document.querySelector('input[name=name]');
+        
+        // Pega todos elementos input
+        // var inputElement = document.querySelectorAll('input');
+
+        var inputElement = document.querySelector('input[name=name]');
+        var btnElement = document.querySelector('button.botao');
+
+        btnElement.onclick = function () {
+            var text = inputElement.value;
+            alert(text);
+        }
+    
+    </Script>
+
+</body>
+</html>

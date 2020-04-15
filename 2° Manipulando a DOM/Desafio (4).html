@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JS Desafio</title>
+</head>
+<body>
+
+    <input type="text" name="nome">
+    <button onClick="adicionar()">Adicionar</button>
+
+    <ul id="app"></ul>
+
+    <Script>
+
+        var nomes = ["Diego", "Gabriel", "Lucas"];
+
+        for (var i = 0; i <= 2; i++) {
+
+            var liElement = document.createElement('li');
+
+            var textElement = document.createTextNode(nomes[i]);
+
+            liElement.appendChild(textElement);
+
+            var ulElement = document.querySelector('#app');
+
+            ulElement.appendChild(liElement);
+
+        }
+
+        var inputElement = document.querySelector('input[name=nome]');
+        var btnElement = document.querySelector('button.botao');
+
+        function adicionar(){
+
+            var text = inputElement.value;
+
+            var liElement = document.createElement('li');
+
+            var textElement = document.createTextNode(text);
+
+            liElement.appendChild(textElement);
+
+            var ulElement = document.querySelector('#app');
+
+            ulElement.appendChild(liElement);
+
+            inputElement.value = "";
+
+        }
+
+    </Script>
+
+</body>
+</html>

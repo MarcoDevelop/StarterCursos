@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso JS Desafio</title>
+</head>
+<body>
+
+    <div id="app">
+        <button class="botao">Adicionar</button>
+    </div>
+
+    <Script>
+        
+        var btnElement = document.querySelector('button.botao');
+
+        btnElement.onclick = function () {
+
+            var boxElement = document.createElement('div');
+            boxElement.setAttribute('class', 'box');
+            boxElement.setAttribute('title', 'box');
+            var textElement = document.createTextNode('box');
+            boxElement.appendChild(textElement);
+            var containerElement = document.querySelector('#app');
+            containerElement.appendChild(boxElement);
+            boxElement.style.width = '100px';
+            boxElement.style.height = '100px';
+            boxElement.style.backgroundColor = '#f00';
+            boxElement.style.margin = '10px';
+             
+        }
+
+    </Script>
+
+</body>
+</html>
